@@ -24,12 +24,12 @@ const images = [
 const BirthdaysPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Function to handle image click
+  
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
 
-  // Function to close the modal
+  
   const closeModal = () => {
     setSelectedImage(null);
   };

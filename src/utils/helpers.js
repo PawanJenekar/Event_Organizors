@@ -8,4 +8,9 @@ export const formatDate = (date) => {
     const diffTime = event - today;
     return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
   };
+
+  export const getFromLocalStorage = (key) => {
+    return localStorage.getItem(key);
+  };
+  
   

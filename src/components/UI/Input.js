@@ -1,13 +1,15 @@
 import React from 'react';
 
-const Input = ({ type, placeholder, value, onChange, className }) => {
+const Input = ({ type, name, placeholder, value, onChange, className }) => {
   return (
     <input
       type={type}
+      name={name}  
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className={`border rounded py-2 px-4 ${className}`}
+      className={className}
+      required
     />
   );
 };

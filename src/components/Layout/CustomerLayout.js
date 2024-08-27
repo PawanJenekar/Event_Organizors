@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../Shared/Sidebar';
 import Header from '../Shared/Header';
 import Footer from '../Shared/Footer';
+import Logout from '../Shared/Logout';
 
 const CustomerLayout = ({ children }) => {
   const links = [
@@ -9,6 +10,7 @@ const CustomerLayout = ({ children }) => {
     { name: 'Book Event', path: '/customer/book-event' },
     { name: 'Booking History', path: '/customer/booking-history' },
     { name: 'Profile', path: '/customer/profile' },
+    { name: 'Logout', component: Logout },
   ];
 
   return (

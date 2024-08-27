@@ -24,12 +24,12 @@ const images = [
 const SeminarsPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Function to handle image click
+
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
 
-  // Function to close the modal
+  
   const closeModal = () => {
     setSelectedImage(null);
   };
@@ -59,7 +59,7 @@ const SeminarsPage = () => {
         </div>
       </main>
       <Footer />
-      {/* Include the Modal component here */}
+      
       <Modal image={selectedImage} onClose={closeModal} />
     </div>
   );
